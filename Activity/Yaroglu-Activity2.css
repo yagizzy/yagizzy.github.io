@@ -35,9 +35,6 @@ th, td
 {
 	text-align: top;	
 }
-.total{
-	 column-rule-color: yellow;
-}
 tbody tr:nth-child(even) td 
 {
 	background-color: yellow;
