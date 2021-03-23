@@ -34,6 +34,9 @@ th, td
 .top{
 	vertical-align: top;
 }
+.center{
+	vertical-align: center;
+}
 tbody tr:nth-child(even) td 
 {
 	background-color: yellow;
