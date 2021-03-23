@@ -33,7 +33,7 @@ th, td
 }
 .top 
 {
-	text-align: top;	
+	text-align: left;	
 }
 tbody tr:nth-child(even) td 
 {
