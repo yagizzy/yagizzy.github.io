@@ -35,7 +35,7 @@ th, td
 	vertical-align: top;
 }
 .center{
-	vertical-align: center;
+	text-align: center;
 }
 tbody tr:nth-child(even) td 
 {
