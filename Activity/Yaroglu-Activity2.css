@@ -31,6 +31,10 @@ th, td
 {
 	text-align: right;	
 }
+.top 
+{
+	text-align: top;	
+}
 .total{
 	 column-rule-color: yellow;
 }
