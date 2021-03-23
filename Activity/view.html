@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="tr" xml:lang="tr">
+<head>
+    <title>2021B-CENG311-1307726: Activity2.html</title>
+   	<link rel="shortcut icon" href="//aybuzem.aybu.edu.tr/pluginfile.php/1/theme_mb2cg/favicon/1616150110/hnet.com-image.ico" />
+     	   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">    	
+	 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 2021B-CENG311-1307726: Activity2.html" />
+<link rel="stylesheet" type="text/css" href="https://aybuzem.aybu.edu.tr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://aybuzem.aybu.edu.tr/theme/styles.php/mb2cg/1616150110_1/all" />
+<link rel="stylesheet" type="text/css" href="https://aybuzem.aybu.edu.tr/theme/mb2cg/assets/pe-icon-7-stroke/css/pe-icon-7-stroke.min.css" />
+<link rel="stylesheet" type="text/css" href="https://aybuzem.aybu.edu.tr/theme/mb2cg/assets/bootstrap/css/glyphicons.min.css" />
+<link rel="stylesheet" type="text/css" href="https://aybuzem.aybu.edu.tr/theme/mb2cg/assets/OwlCarousel/assets/owl.carousel.min.css" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/aybuzem.aybu.edu.tr","sesskey":"jU6kO7QP5L","themerev":"1616150110","slasharguments":1,"theme":"mb2cg","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1616150110","admin":"admin","svgicons":true,"usertimezone":"Avrupa\/Istanbul","contextid":565365};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/aybuzem.aybu.edu.tr\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/aybuzem.aybu.edu.tr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/aybuzem.aybu.edu.tr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/aybuzem.aybu.edu.tr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/aybuzem.aybu.edu.tr\/theme\/yui_combo.php?m\/1616150110\/","combine":true,"comboBase":"https:\/\/aybuzem.aybu.edu.tr\/theme\/yui_combo.php?","ext":false,"root":"m\/1616150110\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_mb2shortcodes-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/aybuzem.aybu.edu.tr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/aybuzem.aybu.edu.tr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1616150110\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/aybuzem.aybu.edu.tr\/lib\/javascript.php\/1616150110\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/aybuzem.aybu.edu.tr\/lib\/javascript.php\/1616150110\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script>
+/* window.onload = function(){
+whatsapp_se_btn_phone = '903129062456'; //Telefon numaramız.
+             whatsapp_se_btn_msg = 'Sizinle iletişime geçmek istiyorum.'; //Yazılmasını istediğimiz hazır mesaj.
+         $(document.body).append('<div class="whatsapp-se-btn"></div>'),whatsapp_se_btn_base64="https://goo.gl/y2Sj2W",$(".whatsapp-se-btn").attr("style","position:fixed;bottom:15px;right:15px;overflow:hidden;background:#1bd741;color:#ffffff;text-align:center;padding:4px 4px;z-index:9999999;cursor:pointer;box-shadow:#000000 0 0 5px;border-radius:100px;"),$(".whatsapp-se-btn").html('<img style="width: 45px;" src="'+whatsapp_se_btn_base64+'" alt="Whatsapp ile İletişime Geç" />'),$(".whatsapp-se-btn").attr("onclick",'location.href="https://wa.me/'+whatsapp_se_btn_phone+"?text="+whatsapp_se_btn_msg+'"');}
+*/
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-572MX8RBC9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-572MX8RBC9');
+</script>
+
+	</head><body  id="page-mod-resource-view" class="format-topics  path-mod path-mod-resource chrome dir-ltr lang-tr yui-skin-sam yui3-skin-sam aybuzem-aybu-edu-tr pagelayout-incourse course-31895 context-565365 cmid-182613 category-407 theme-lfw header-light2 default-login loggedin noguestuser editfw coursetheme- custom_id_a59e006be59d custom_id_5b1649004a21 theme-hidden-region-mode sidebar-case sidebar-one">
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Ana içeriğe geç</a>
+</div><script type="text/javascript" src="https://aybuzem.aybu.edu.tr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://aybuzem.aybu.edu.tr/theme/jquery.php/core/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+<div id="page-outer">
+<div id="page">
+<div id="page-a">
+	<div class="mb2notices"></div>    <div id="main-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                 	<div class="main-logo" style="width:580px;">
+	<a href="https://aybuzem.aybu.edu.tr" title="AYBUZEM">
+		<img src="//aybuzem.aybu.edu.tr/pluginfile.php/1/theme_mb2cg/logo/1616150110/uzaktan_egitim_slider05.png" alt="AYBUZEM">
+	</a>                    
+</div>					                    	<div class="mobile-nav"><a class="menu-bar show-menu" href="#"><i class="fa fa-bars"></i>Menu</a><ul class="main-menu theme-ddmenu clearfix" data-animtype="1" data-animspeed="150"><li class="mycourses dropdown"><a href="#" title="Derslerim">Derslerim <span class="mycourses-num">(9)</span><span class="mobile-arrow"></span></a><ul><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31903" title="CENG204 - COMPUTER SYSTEM ARCHITECTURE">CENG204 - COMPUTER SYSTEM ARCHITECTURE</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31901" title="ENGR258 - INTRODUCTION TO BIOTECHNOLOGY FOR">ENGR258 - INTRODUCTION TO BIOTECHNOLOGY FOR</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895" title="CENG311 - WEB TECNOLOGY APPLICATIONS">CENG311 - WEB TECNOLOGY APPLICATIONS</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31767" title="CENG402 - GRADUATION PROJECT II (8)">CENG402 - GRADUATION PROJECT II (8)</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31766" title="CENG404 - SPECIAL TOPICS IN CENG">CENG404 - SPECIAL TOPICS IN CENG</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31765" title="CENG428 - NEURAL NETWORKS">CENG428 - NEURAL NETWORKS</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31762" title="ENGR402 - PRINCIPLES OF OCCUPATIONAL HEALTH">ENGR402 - PRINCIPLES OF OCCUPATIONAL HEALTH</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31761" title="CENG427 - PROGRAMMING OF MOBILE DEVICES">CENG427 - PROGRAMMING OF MOBILE DEVICES</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31760" title="CENG431 - INTRODUCTION TO DESING PATTERNS">CENG431 - INTRODUCTION TO DESING PATTERNS</a></li></ul></li><li class="dropdown"><a href="https://aybuzem.aybu.edu.tr" class="" data-toggle="" title="https://aybuzem.aybu.edu.tr/?redirect=0">AYBUZEM<span class="mobile-arrow"></span></a><ul class="dropdown-list"><li class=""><a title="Yönetim" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=yonetim">Yönetim</a></li><li class=""><a title="Yönetmelikler" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=yonetmelik">Yönetmelikler</a></li><li class=""><a title="Faaliyet Raporu" class="" href="https://aybu.edu.tr/aybuzem/contents/files/653Faaliyet_Raporu_AYBUZEM.pdf">Faaliyet Raporu</a></li></ul><li class=""><a title="Rektörden Mesaj" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=rektorumuzden_mesaj">Rektörden Mesaj</a></li><li class=""><a title="Birim Temsilcileri" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=temsilciler">Birim Temsilcileri</a></li><li class=""><a title="AYBUZEM YOUTUBE" class="" href="https://www.youtube.com/channel/UC-87ZX_tGH-f27EnABpQvAQ/playlists "target="_blank">AYBUZEM YOUTUBE</a></li><li class="search-item"><a href="#" title="Ara"><i class="fa fa-search"></i></a></li><li class="bookmarks-item dropdown"><a href="#"><span class="text">My bookmarks</span><i class="fa fa-bookmark"></i><span class="mobile-arrow"></span></a><ul class="theme-bookmarks dropdown-list"><li class="theme-bookmarks-add"><a href="#" class="theme-bookmarks-form" data-url="/mod/resource/view.php?id=182613" data-mb2bktitle="CENG311 - WEB TECNOLOGY APPLICATIONS:  Activity2.html" data-toggle="modal" data-target="#theme-bookmarks-modal">Yer imlerine ekle</a></li></ul></li></ul></div>
+                                        
+<div class="header-content" style="margin-top:9px;">
+		<div class="header-content-b clearfix">
+		<div class="theme-loginform"><a href="#" class="btn btn-primary login-open"><i class="fa fa-user"></i> 16050111022</a><div class="theme-loginform-inner"><div class="theme-loginform-form"><div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="dropdown-0" aria-label="Kullanıcı menüsü" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">YAĞIZ YAROĞLU</span><span class="avatars"><span class="avatar current"><img src="https://secure.gravatar.com/avatar/133deba12d9532a65ccd7da5e38db66f?s=35&amp;d=mm" class="userpicture defaultuserpic" width="35" height="35" role="presentation" aria-hidden="true" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br" id="dropdown-menu-0">
+                                        <a href="https://aybuzem.aybu.edu.tr/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Kontrol paneli
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://aybuzem.aybu.edu.tr/user/profile.php?id=47533" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profil
+                                            </span>
+                                        </a>
+                                        <a href="https://aybuzem.aybu.edu.tr/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Başarı notları
+                                            </span>
+                                        </a>
+                                        <a href="https://aybuzem.aybu.edu.tr/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Mesajlar
+                                            </span>
+                                        </a>
+                                        <a href="https://aybuzem.aybu.edu.tr/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Tercihler
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://aybuzem.aybu.edu.tr/login/logout.php?sesskey=jU6kO7QP5L" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Çıkış yap
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div><a href="https://aybuzem.aybu.edu.tr/user/view.php?id=47533&amp;course=31895"><img src="https://secure.gravatar.com/avatar/133deba12d9532a65ccd7da5e38db66f?s=80&amp;d=mm" class="welcome_userpicture defaultuserpic" width="80" height="80" alt="YAĞIZ YAROĞLU &#039;ın resmi" title="YAĞIZ YAROĞLU &#039;ın resmi" /></a></div></div></div>        <div class="header-tools">
+				            <div class="theme-plugins">
+	                <div class="float-right popover-region collapsed">
+    <a id="message-drawer-toggle-6059f66b04be06059f66adb31f36" class="nav-link d-inline-block popover-region-toggle position-relative" href="#"
+            role="button">
+        <i class="icon fa fa-comment fa-fw "  title="İleti menüsünü aç / kapat" aria-label="İleti menüsünü aç / kapat"></i>
+        <div class="count-container " data-region="count-container"
+        aria-label="There are 3 unread conversations">3</div>
+    </a>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="47533"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-6059f66b054c26059f66adb31f37"
+        aria-haspopup="true"
+        aria-label="Yeni bildirim olmadan bildirim penceresini göster"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw "  title="Bildirimler menüsünü aç / kapat" aria-label="Bildirimler menüsünü aç / kapat"></i>
+        <div class="count-container " data-region="count-container"
+        aria-label="There are 2 unread notifications">2</div>
+
+    </div>
+    <div 
+        id="popover-region-container-6059f66b054c26059f66adb31f37"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Bildirim penceresi"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Bildirimler</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Tümünü okunmuş olarak işaretle"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Tümünü okunmuş olarak işaretle" aria-label="Tümünü okunmuş olarak işaretle"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+        </a>
+        <a href="https://aybuzem.aybu.edu.tr/message/notificationpreferences.php?userid=47533"
+           title="Bildirim tercihleri">
+            <i class="icon fa fa-cog fa-fw "  title="Bildirim tercihleri" aria-label="Bildirim tercihleri"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Bildiriminiz yok</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://aybuzem.aybu.edu.tr/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Tümünü gör</div>
+                    </div>
+                </a>
+    </div>
+</div>	            </div>
+	             		        		<ul class="languages-list"><li class="lang-item dropdown"><a href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182613&amp;lang=tr" title="Türkçe ‎(tr)‎"><img class="lang-flag" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/theme/1616150110/flags/48x32/TR" alt="Türkçe ‎(tr)‎"> <span class="lang-shortname">Tr</span><span class="lang-fullname">Türkçe ‎(tr)‎</span><span class="mobile-arrow"></span></a></li><li><a href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182613&amp;lang=en" title="English ‎(en)‎"><img class="lang-flag" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/theme/1616150110/flags/48x32/EN" alt="English ‎(en)‎"> <span class="lang-shortname">En</span><span class="lang-fullname">English ‎(en)‎</span></a></li></ul>           			                <div class="theme-usertools"><div class="theme-fontsizer"><a class="fs1" href="#" data-size="1" title="Small font">A</a><a class="fs2" href="#" data-size="2" title="Medium font">A</a><a class="fs3" href="#" data-size="3" title="Big font">A</a></div></div>                        <ul class="theme-siteinfo"><li class="siteinfo-phone"><a href="#"><i class="fa fa-map-marker"></i></a><div class="siteinfo-content"><ul class="info-list"><li>15 Temmuz Şehitleri Binası  C Blok 1. Kat Takdir Cad. 150. Sok. No 5 06010 Etlik Keçiören/ANKARA</li></ul></div></li><li class="siteinfo-email"><a href="#"><i class="fa fa-envelope"></i></a><div class="siteinfo-content"><ul class="info-list"><li>aybuzem@ybu.edu.tr</li></ul></div></li><li class="siteinfo-phone"><a href="#"><i class="fa fa-phone"></i></a><div class="siteinfo-content"><ul class="info-list"><li>+90 312 </li><li>+90 312 </li></ul></div></li><li class="siteinfo-phone"><a href="#"><i class="fa fa-mortar-board"></i></a><div class="siteinfo-content"><ul class="info-list"><li><span class="siteinfo-name">Biz kimiz:</span> Ankara Yıldırım Beyazıt Üniversitesi  Uzaktan Eğitim Araştırma ve Uygulama Merkezi</li></ul></div></li></ul>                    </div>
+		<a class="header-tools-toggle btn btn-secondary btn-full" href="#"><i class="fa fa-angle-down"></i></a>
+    </div>
+</div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+	                <div id="main-navigation">
+            <div class="main-navigation-inner">
+                <div class="container-fluid menu-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="menu-bar show-menu" href="#"><i class="fa fa-bars"></i>Menu</a><ul class="main-menu theme-ddmenu clearfix" data-animtype="1" data-animspeed="150"><li class="mycourses dropdown"><a href="#" title="Derslerim">Derslerim <span class="mycourses-num">(9)</span><span class="mobile-arrow"></span></a><ul><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31903" title="CENG204 - COMPUTER SYSTEM ARCHITECTURE">CENG204 - COMPUTER SYSTEM ARCHITECTURE</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31901" title="ENGR258 - INTRODUCTION TO BIOTECHNOLOGY FOR">ENGR258 - INTRODUCTION TO BIOTECHNOLOGY FOR</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895" title="CENG311 - WEB TECNOLOGY APPLICATIONS">CENG311 - WEB TECNOLOGY APPLICATIONS</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31767" title="CENG402 - GRADUATION PROJECT II (8)">CENG402 - GRADUATION PROJECT II (8)</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31766" title="CENG404 - SPECIAL TOPICS IN CENG">CENG404 - SPECIAL TOPICS IN CENG</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31765" title="CENG428 - NEURAL NETWORKS">CENG428 - NEURAL NETWORKS</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31762" title="ENGR402 - PRINCIPLES OF OCCUPATIONAL HEALTH">ENGR402 - PRINCIPLES OF OCCUPATIONAL HEALTH</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31761" title="CENG427 - PROGRAMMING OF MOBILE DEVICES">CENG427 - PROGRAMMING OF MOBILE DEVICES</a></li><li class="visible1"><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31760" title="CENG431 - INTRODUCTION TO DESING PATTERNS">CENG431 - INTRODUCTION TO DESING PATTERNS</a></li></ul></li><li class="dropdown"><a href="https://aybuzem.aybu.edu.tr" class="" data-toggle="" title="https://aybuzem.aybu.edu.tr/?redirect=0">AYBUZEM<span class="mobile-arrow"></span></a><ul class="dropdown-list"><li class=""><a title="Yönetim" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=yonetim">Yönetim</a></li><li class=""><a title="Yönetmelikler" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=yonetmelik">Yönetmelikler</a></li><li class=""><a title="Faaliyet Raporu" class="" href="https://aybu.edu.tr/aybuzem/contents/files/653Faaliyet_Raporu_AYBUZEM.pdf">Faaliyet Raporu</a></li></ul><li class=""><a title="Rektörden Mesaj" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=rektorumuzden_mesaj">Rektörden Mesaj</a></li><li class=""><a title="Birim Temsilcileri" class="" href="https://aybuzem.aybu.edu.tr/local/staticpage/view.php?page=temsilciler">Birim Temsilcileri</a></li><li class=""><a title="AYBUZEM YOUTUBE" class="" href="https://www.youtube.com/channel/UC-87ZX_tGH-f27EnABpQvAQ/playlists "target="_blank">AYBUZEM YOUTUBE</a></li><li class="search-item"><a href="#" title="Ara"><i class="fa fa-search"></i></a></li><li class="bookmarks-item dropdown"><a href="#"><span class="text">My bookmarks</span><i class="fa fa-bookmark"></i><span class="mobile-arrow"></span></a><ul class="theme-bookmarks dropdown-list"><li class="theme-bookmarks-add"><a href="#" class="theme-bookmarks-form" data-url="/mod/resource/view.php?id=182613" data-mb2bktitle="CENG311 - WEB TECNOLOGY APPLICATIONS:  Activity2.html" data-toggle="modal" data-target="#theme-bookmarks-modal">Yer imlerine ekle</a></li></ul></li></ul>                        </div>
+                    </div>
+                </div>
+                <div class="theme-searchform"><a href="#" class="search-close"><i class="icon2 pe-7s-close"></i></a><div class="container-fluid"><div class="row"><div class="col-md-12"><form id="theme-search" action="https://aybuzem.aybu.edu.tr/course/search.php"><input id="theme-searchbox" type="text" value="" placeholder="Dersleri ara" name="search"><button type="submit"><i class="fa fa-search"></i></button></form></div></div></div></div>            </div>
+        </div>
+            </div><!-- //end #page-a -->
+<div id="page-b">
+<div id="page-header" class="nobutton">
+	<div class="inner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb"><nav role="navigation" aria-label="Gezinme Çubuğu">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/my/"  >Kontrol paneli</a>
+                </li>
+                <li class="breadcrumb-item">Derslerim</li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/course/index.php?categoryid=351"  >2020-2021 Bahar Dönemi</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/course/index.php?categoryid=405"  >MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/course/index.php?categoryid=407"  >BİLGİSAYAR MÜHENDİSLİĞİ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895"  title="CENG311 - WEB TECNOLOGY APPLICATIONS">2021B-CENG311-1307726</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-6"  >Unit 2: CSS</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182613" aria-current="page" title="Kaynak">Activity2.html</a>
+                </li>
+    </ol>
+</nav></div>
+					                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="site-menu">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-md-12" style="min-height:0;">
+            	<ul class="site-menu-list"><li class="item-dashboard"><a href="https://aybuzem.aybu.edu.tr/my"><i class="fa fa-tachometer"></i><span>Kontrol paneli</span></a></li><li class="item-frontpage"><a href="https://aybuzem.aybu.edu.tr/?redirect=0"><i class="fa fa-home"></i><span>Site ana sayfası</span></a></li><li class="item-calendar"><a href="https://aybuzem.aybu.edu.tr/calendar/view.php?view=month"><i class="fa fa-calendar"></i><span>Takvim</span></a></li><li class="item-badges"><a href="https://aybuzem.aybu.edu.tr/badges/mybadges.php"><i class="fa fa-bookmark"></i><span>Nişanlar</span></a></li><li class="item-courses"><a href="https://aybuzem.aybu.edu.tr/course/"><i class="fa fa-book"></i><span>Tüm dersler</span></a></li></ul>            </div>
+        </div>
+    </div>
+</div>
+<div class="mb2notices"></div><div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+     		<section class="content-col col-md-9">
+            	<div id="page-content">
+					<div class="panel-link" data-toggle="modal" data-target="#course-panel"><span class="panel-text">Course dashboard</span><span class="panel-icon"><i class="fa fa-cog"></i></span></div><div class="clearfix"></div>                	<span class="notifications" id="user-notifications"></span>					                	<div role="main"><span id="maincontent"></span><h2>Activity2.html</h2><div class="resourcecontent resourcegeneral">
+  <iframe id="resourceobject" src="https://aybuzem.aybu.edu.tr/pluginfile.php/565365/mod_resource/content/1/Activity2.html?embed=1">
+    Dosyayı görmek için <a href="https://aybuzem.aybu.edu.tr/pluginfile.php/565365/mod_resource/content/1/Activity2.html" >Activity2.html</a> tıklayın
+  </iframe>
+</div></div>                                        <div class="mt-2 mb-1 activity-navigation">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://aybuzem.aybu.edu.tr/mod/assign/view.php?id=182610&forceview=1" id="prev-activity-link" class="btn btn-link"  title="Activity 2" >&#x25C4; Activity 2</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://aybuzem.aybu.edu.tr/course/jumpto.php" class="form-inline" id="url_select_f6059f66adb31f38">
+        <input type="hidden" name="sesskey" value="jU6kO7QP5L">
+            <label for="jump-to-activity" class="sr-only">
+                Geçiş yap...
+            </label>
+        <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
+                 >
+                    <option value="" selected>Geçiş yap...</option>
+                    <option value="/mod/forum/view.php?id=160160&amp;forceview=1" >Announcements</option>
+                    <option value="/mod/assign/view.php?id=182450&amp;forceview=1" >Sprint 1</option>
+                    <option value="/mod/url/view.php?id=169596&amp;forceview=1" >w3schools</option>
+                    <option value="/mod/url/view.php?id=169599&amp;forceview=1" >MDN Web Technology for Developers</option>
+                    <option value="/mod/url/view.php?id=169600&amp;forceview=1" >JS Fiddle</option>
+                    <option value="/mod/url/view.php?id=169602&amp;forceview=1" >Little Web Hut</option>
+                    <option value="/mod/url/view.php?id=177061&amp;forceview=1" >HTML Validator</option>
+                    <option value="/mod/url/view.php?id=169621&amp;forceview=1" >Internet Structure</option>
+                    <option value="/mod/url/view.php?id=169623&amp;forceview=1" >How a DNS works</option>
+                    <option value="/mod/url/view.php?id=169625&amp;forceview=1" >What is a URL</option>
+                    <option value="/mod/url/view.php?id=169603&amp;forceview=1" >HTML5 and CSS 3 Beginner Tutorial Series (51 videos) </option>
+                    <option value="/mod/resource/view.php?id=169528&amp;forceview=1" >Syllabus</option>
+                    <option value="/mod/assign/view.php?id=169630&amp;forceview=1" >Videos to Watch</option>
+                    <option value="/mod/resource/view.php?id=169663&amp;forceview=1" >Unit 0: Introduction</option>
+                    <option value="/mod/resource/view.php?id=176717&amp;forceview=1" >Simple HTML Tags</option>
+                    <option value="/mod/assign/view.php?id=176718&amp;forceview=1" >Assignment#1</option>
+                    <option value="/mod/assign/view.php?id=182521&amp;forceview=1" >In-class Activity - Lab1</option>
+                    <option value="/mod/resource/view.php?id=182523&amp;forceview=1" >Lab1.html</option>
+                    <option value="/mod/assign/view.php?id=182572&amp;forceview=1" >Videos to Watch</option>
+                    <option value="/mod/url/view.php?id=182606&amp;forceview=1" >Additional resources for CSS</option>
+                    <option value="/mod/assign/view.php?id=182610&amp;forceview=1" >Activity 2</option>
+                    <option value="/mod/resource/view.php?id=182615&amp;forceview=1" >Activity2.css</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Git">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182615&forceview=1" id="next-activity-link" class="btn btn-link"  title="Activity2.css" >Activity2.css &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>                                    </div>
+       		</section>                            <section class="sidebar-col col-md-3">
+                <aside id="block-region-side-pre" class="side-pre style-default block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Gezinme 'yı atla</a>
+
+<section id="inst20"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+          aria-labelledby="instance-20-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-20-header" class="card-title d-inline">Gezinme</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" aria-labelledby="label_1_1"><p class="tree_item branch navigation_node" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f2_group" data-collapsible="false"><a tabindex="-1" id="label_1_1" href="https://aybuzem.aybu.edu.tr/my/">Kontrol paneli</a></p><ul id="random6059f66adb31f2_group" role="group"><li class="type_setting depth_2 item_with_icon" aria-labelledby="label_2_2"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_2_2" href="https://aybuzem.aybu.edu.tr/?redirect=0"><i class="icon fa fa-home fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Site ana sayfası</span></a></p></li><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_3"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random6059f66adb31f4_group"><span tabindex="-1" id="label_2_3" title="Ankara Yıldırım Beyazıt Üniversitesi - AYBUZEM">Site sayfaları</span></p><ul id="random6059f66adb31f4_group" role="group" aria-hidden="true"><li class="type_unknown depth_3 item_with_icon" aria-labelledby="label_3_5"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_5" href="https://aybuzem.aybu.edu.tr/blog/index.php"><i class="icon fa fa-fw fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Site blogları</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_6"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_6" href="https://aybuzem.aybu.edu.tr/badges/view.php?type=1"><i class="icon fa fa-fw fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Site rozetleri</span></a></p></li><li class="type_setting depth_3 item_with_icon" aria-labelledby="label_3_7"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_7" href="https://aybuzem.aybu.edu.tr/tag/search.php"><i class="icon fa fa-fw fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Etiketler</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_8"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_8" href="https://aybuzem.aybu.edu.tr/calendar/view.php?view=month&amp;course=31895"><i class="icon fa fa-calendar fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Takvim</span></a></p></li><li class="type_activity depth_3 item_with_icon" aria-labelledby="label_3_10"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_10" title="Forum" href="https://aybuzem.aybu.edu.tr/mod/forum/view.php?id=160"><img class="icon navicon" alt="Forum" title="Forum" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/forum/1616150110/icon" /><span class="item-content-wrap">Site duyuruları</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_11"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f10_group"><span tabindex="-1" id="label_2_11">Derslerim</span></p><ul id="random6059f66adb31f10_group" role="group"><li class="type_unknown depth_3 contains_branch" aria-labelledby="label_3_12"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f11_group"><span tabindex="-1" id="label_3_12">2020-2021 Bahar Dönemi</span></p><ul id="random6059f66adb31f11_group" role="group"><li class="type_unknown depth_4 contains_branch" aria-labelledby="label_4_13"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f12_group"><span tabindex="-1" id="label_4_13">MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ</span></p><ul id="random6059f66adb31f12_group" role="group"><li class="type_unknown depth_5 contains_branch" aria-labelledby="label_5_14"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f13_group"><span tabindex="-1" id="label_5_14">BİLGİSAYAR MÜHENDİSLİĞİ</span></p><ul id="random6059f66adb31f13_group" role="group"><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_15"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31903" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31903" data-node-key="31903" data-node-type="20"><a tabindex="-1" id="label_6_15" title="CENG204 - COMPUTER SYSTEM ARCHITECTURE" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31903">2021B-CENG204-1307717</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_16"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31901" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31901" data-node-key="31901" data-node-type="20"><a tabindex="-1" id="label_6_16" title="ENGR258 - INTRODUCTION TO BIOTECHNOLOGY FOR ENGINEERS" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31901">2021B-ENGR258-1307720</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_17"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f14_group"><a tabindex="-1" id="label_6_17" title="CENG311 - WEB TECNOLOGY APPLICATIONS" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895">2021B-CENG311-1307726</a></p><ul id="random6059f66adb31f14_group" role="group"><li class="type_container depth_7 contains_branch" aria-labelledby="label_7_18"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random6059f66adb31f15_group"><a tabindex="-1" id="label_7_18" href="https://aybuzem.aybu.edu.tr/user/index.php?id=31895">Katılımcılar</a></p><ul id="random6059f66adb31f15_group" role="group" aria-hidden="true"><li class="type_setting depth_8 item_with_icon" aria-labelledby="label_8_19"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_19" href="https://aybuzem.aybu.edu.tr/blog/index.php?courseid=31895"><i class="icon fa fa-fw fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Ders blogları</span></a></p></li><li class="type_user depth_8 item_with_icon" aria-labelledby="label_8_20"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_20" href="https://aybuzem.aybu.edu.tr/user/view.php?id=47533&amp;course=31895"><i class="icon fa fa-fw fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">YAĞIZ YAROĞLU</span></a></p></li></ul></li><li class="type_setting depth_7 item_with_icon" aria-labelledby="label_7_21"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_7_21" href="https://aybuzem.aybu.edu.tr/badges/view.php?type=2&amp;id=31895"><i class="icon fa fa-shield fa-fw navicon"  title="Nişanlar" aria-label="Nişanlar"></i><span class="item-content-wrap">Nişanlar</span></a></p></li><li class="type_setting depth_7 item_with_icon" aria-labelledby="label_7_22"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_7_22" href="https://aybuzem.aybu.edu.tr/admin/tool/lp/coursecompetencies.php?courseid=31895"><i class="icon fa fa-check-square-o fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Yetkinlikler</span></a></p></li><li class="type_setting depth_7 item_with_icon" aria-labelledby="label_7_23"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_7_23" href="https://aybuzem.aybu.edu.tr/grade/report/index.php?id=31895"><i class="icon fa fa-table fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Notlar</span></a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_24"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218976" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218976" data-node-key="218976" data-node-type="30"><a tabindex="-1" id="label_7_24" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-0">Genel</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_25"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218981" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218981" data-node-key="218981" data-node-type="30"><a tabindex="-1" id="label_7_25" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-1">Project Sprints</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_26"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218978" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218978" data-node-key="218978" data-node-type="30"><a tabindex="-1" id="label_7_26" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-2">Class Resources</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_27"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218979" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218979" data-node-key="218979" data-node-type="30"><a tabindex="-1" id="label_7_27" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-3">Videos to Watch</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_28"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218977" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218977" data-node-key="218977" data-node-type="30"><a tabindex="-1" id="label_7_28" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-4">Unit 0: Introduction</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_29"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_218980" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_218980" data-node-key="218980" data-node-type="30"><a tabindex="-1" id="label_7_29" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-5">Unit 1: HTML</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_30"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6059f66adb31f21_group"><a tabindex="-1" id="label_7_30" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31895#section-6">Unit 2: CSS</a></p><ul id="random6059f66adb31f21_group" role="group"><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_31"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_31" title="Ödev" href="https://aybuzem.aybu.edu.tr/mod/assign/view.php?id=182572"><img class="icon navicon" alt="Ödev" title="Ödev" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/assign/1616150110/icon" /><span class="item-content-wrap">Videos to Watch</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_32"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_32" title="URL" href="https://aybuzem.aybu.edu.tr/mod/url/view.php?id=182606"><img class="icon navicon" alt="URL" title="URL" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/url/1616150110/icon" /><span class="item-content-wrap">Additional resources for CSS</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_33"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_33" title="Ödev" href="https://aybuzem.aybu.edu.tr/mod/assign/view.php?id=182610"><img class="icon navicon" alt="Ödev" title="Ödev" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/assign/1616150110/icon" /><span class="item-content-wrap">Activity 2</span></a></p></li><li class="type_activity depth_8 item_with_icon current_branch" aria-labelledby="label_8_34"><p class="tree_item hasicon active_tree_node" role="treeitem"><a tabindex="-1" id="label_8_34" title="Kaynak" href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182613"><img class="icon navicon" alt="Kaynak" title="Kaynak" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/core/1616150110/f/html-24" /><span class="item-content-wrap">Activity2.html</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_35"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_35" title="Kaynak" href="https://aybuzem.aybu.edu.tr/mod/resource/view.php?id=182615"><img class="icon navicon" alt="Kaynak" title="Kaynak" src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/core/1616150110/f/text-24" /><span class="item-content-wrap">Activity2.css</span></a></p></li></ul></li></ul></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_36"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31767" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31767" data-node-key="31767" data-node-type="20"><a tabindex="-1" id="label_6_36" title="CENG402 - GRADUATION PROJECT II (8)" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31767">2021B-CENG402-1309199</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_37"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31766" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31766" data-node-key="31766" data-node-type="20"><a tabindex="-1" id="label_6_37" title="CENG404 - SPECIAL TOPICS IN CENG II" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31766">2021B-CENG404-1309200</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_38"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31765" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31765" data-node-key="31765" data-node-type="20"><a tabindex="-1" id="label_6_38" title="CENG428 - NEURAL NETWORKS" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31765">2021B-CENG428-1309201</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_39"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31762" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31762" data-node-key="31762" data-node-type="20"><a tabindex="-1" id="label_6_39" title="ENGR402 - PRINCIPLES OF OCCUPATIONAL HEALTH AND SAFETY II" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31762">2021B-ENGR402-1309204</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_40"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31761" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31761" data-node-key="31761" data-node-type="20"><a tabindex="-1" id="label_6_40" title="CENG427 - PROGRAMMING OF MOBILE DEVICES" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31761">2021B-CENG427-1309205</a></p></li><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_41"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_31760" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_31760" data-node-key="31760" data-node-type="20"><a tabindex="-1" id="label_6_41" title="CENG431 - INTRODUCTION TO DESING PATTERNS" href="https://aybuzem.aybu.edu.tr/course/view.php?id=31760">2021B-CENG431-1309206</a></p></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>                </section>
+                	</div>
+	</div>
+</div>
+<div
+    id="message-drawer-6059f66b0a00f6059f66adb31f39"
+    class="message-drawer message-app drawer bg-light hidden"
+    aria-expanded="false"
+    aria-hidden="true"
+    data-region="message-drawer"
+    role="region"
+>
+    <div class="drawer-top">
+        <a id="message-drawer-close-6059f66b0a00f6059f66adb31f39" class="" href="#">
+            <i class="icon fa fa-window-close fa-fw "  title="İleti menüsünü aç / kapat" aria-label="İleti menüsünü aç / kapat"></i>
+        </a>
+    </div>
+    <div class="header-container position-relative" data-region="header-container">
+        <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-contacts">
+            <div class="d-flex align-items-center">
+                <div class="align-self-stretch">
+                    <a class="h-100 d-flex align-items-center mr-2" href="#" data-route-back role="button">
+                        <div class="icon-back-in-drawer">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                        </div>
+                        <div class="icon-back-in-app">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                        </div>                    </a>
+                </div>
+                <div>
+                    Kişiler
+                </div>
+                <div class="ml-auto">
+                    <a href="#" data-route="view-search" role="button" aria-label="Ara">
+                        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                    </a>
+                </div>
+            </div>
+        </div>        
+        <div
+            class="hidden bg-white position-relative border-bottom px-2 py-2"
+            aria-hidden="true"
+            data-region="view-conversation"
+        >
+            <div class="hidden" data-region="header-content"></div>
+            <div class="hidden" data-region="header-edit-mode">
+                
+                <div class="d-flex p-2 align-items-center">
+                    Messages selected:
+                    <span class="ml-1" data-region="message-selected-court">1</span>
+                    <button type="button" class="ml-auto close" aria-label="Cancel message selection"
+                        data-action="cancel-edit-mode">
+                            <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div data-region="header-placeholder">
+                <div class="d-flex">
+                    <div
+                        class="ml-2 rounded-circle bg-pulse-grey align-self-center"
+                        style="height: 38px; width: 38px"
+                    >
+                    </div>
+                    <div class="ml-2 " style="flex: 1">
+                        <div
+                            class="mt-1 bg-pulse-grey w-75"
+                            style="height: 16px;"
+                        >
+                        </div>
+                    </div>
+                    <div
+                        class="ml-2 bg-pulse-grey align-self-center"
+                        style="height: 16px; width: 20px"
+                    >
+                    </div>
+                </div>
+            </div>
+            <div
+                class="hidden position-absolute"
+                data-region="confirm-dialogue-container"
+                style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+            ></div>
+        </div>        <div class="border-bottom px-2 py-3" aria-hidden="false"  data-region="view-overview">
+            <div class="d-flex align-items-center">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text pr-0 bg-white">
+                            <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control border-left-0"
+                        placeholder="Ara"
+                        aria-label="Ara"
+                        data-region="view-overview-search-input"
+                    >
+                </div>
+                <div class="ml-2">
+                    <a
+                        href="#"
+                        data-route="view-settings"
+                        data-route-param="47533"
+                        aria-label="Ayarlar"
+                        role="button"
+                    >
+                        <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-right mt-3">
+                <a href="#" data-route="view-contacts" role="button">
+                    <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                    Kişiler
+                    <span class="badge bg-primary ml-2 hidden"
+                    data-region="contact-request-count"
+                    aria-label="There are 0 pending contact requests">
+                        0
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hidden border-bottom px-2 py-3 view-search"  aria-hidden="true" data-region="view-search">
+            <div class="d-flex align-items-center">
+                <a
+                    class="mr-2 align-self-stretch d-flex align-items-center"
+                    href="#"
+                    data-route-back
+                    data-action="cancel-search"
+                    role="button"
+                >
+                    <div class="icon-back-in-drawer">
+                        <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                    </div>
+                    <div class="icon-back-in-app">
+                        <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                    </div>                </a>
+                <div class="input-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ara"
+                        aria-label="Ara"
+                        data-region="search-input"
+                    >
+                    <div class="input-group-append">
+                        <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            data-action="search"
+                            aria-label="Ara"
+                        >
+                            <span data-region="search-icon-container">
+                                <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                            </span>
+                            <span class="hidden" data-region="loading-icon-container">
+                                <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-settings">
+            <div class="d-flex align-items-center">
+                <div class="align-self-stretch" >
+                    <a class="h-100 d-flex mr-2 align-items-center" href="#" data-route-back role="button">
+                        <div class="icon-back-in-drawer">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                        </div>
+                        <div class="icon-back-in-app">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                        </div>                    </a>
+                </div>
+                <div>
+                    Ayarlar
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container position-relative" data-region="body-container">
+        
+        <div
+            class="hidden"
+            data-region="view-contact"
+            aria-hidden="true"
+        >
+            <div class="p-2 pt-3" data-region="content-container"></div>
+        </div>        <div class="hidden h-100" data-region="view-contacts" aria-hidden="true" data-user-id="47533">
+            <div class="d-flex flex-column h-100">
+                <div class="p-3 border-bottom">
+                    <ul class="nav nav-pills nav-fill" role="tablist">
+                        <li class="nav-item">
+                            <a
+                                id="contacts-tab-6059f66b0a00f6059f66adb31f39"
+                                class="nav-link active"
+                                href="#contacts-tab-panel-6059f66b0a00f6059f66adb31f39"
+                                data-toggle="tab"
+                                data-action="show-contacts-section"
+                                role="tab"
+                                aria-controls="contacts-tab-panel-6059f66b0a00f6059f66adb31f39"
+                                aria-selected="true"
+                            >
+                                Kişiler
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                id="requests-tab-6059f66b0a00f6059f66adb31f39"
+                                class="nav-link"
+                                href="#requests-tab-panel-6059f66b0a00f6059f66adb31f39"
+                                data-toggle="tab"
+                                data-action="show-requests-section"
+                                role="tab"
+                                aria-controls="requests-tab-panel-6059f66b0a00f6059f66adb31f39"
+                                aria-selected="false"
+                            >
+                                İstekler
+                                <span class="badge bg-primary ml-2 hidden"
+                                data-region="contact-request-count"
+                                aria-label="There are 0 pending contact requests">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content d-flex flex-column h-100">
+                            <div
+            class="tab-pane fade show active h-100 lazy-load-list"
+            aria-live="polite"
+            data-region="lazy-load-list"
+            data-user-id="47533"
+                                id="contacts-tab-panel-6059f66b0a00f6059f66adb31f39"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-6059f66b0a00f6059f66adb31f39"
+
+        >
+            
+            <div class="hidden text-center p-2" data-region="empty-message-container">
+                Kişi yok
+            </div>
+            <div class="hidden list-group" data-region="content-container">
+                
+            </div>
+            <div class="list-group" data-region="placeholder-container">
+                                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>                    <div class="p-2 d-flex list-group-item border-0" data-region="placeholder">
+                        <div
+                            class="rounded-circle bg-pulse-grey"
+                            style="height: 38px; width: 38px"
+                        >
+                        </div>
+                        <div
+                            class="ml-2 bg-pulse-grey w-50"
+                            style="height: 20px;"
+                        >
+                        </div>
+                    </div>
+            </div>
+            <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+            </div>
+        </div>
+        
+                            <div
+            class="tab-pane fade h-100 lazy-load-list"
+            aria-live="polite"
+            data-region="lazy-load-list"
+            data-user-id="47533"
+                                id="requests-tab-panel-6059f66b0a00f6059f66adb31f39"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-6059f66b0a00f6059f66adb31f39"
+
+        >
+            
+            <div class="hidden text-center p-2" data-region="empty-message-container">
+                Kişi isteği yok
+            </div>
+            <div class="hidden list-group" data-region="content-container">
+                
+            </div>
+            <div class="list-group" data-region="placeholder-container">
+                
+            </div>
+            <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>        
+        <div
+            class="view-conversation hidden h-100"
+            aria-hidden="true"
+            data-region="view-conversation"
+            data-user-id="47533"
+            data-midnight="1616446800"
+            data-message-poll-min="10"
+            data-message-poll-max="120"
+            data-message-poll-after-max="300"
+            style="overflow-y: auto; overflow-x: hidden"
+        >
+            <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                <div class="content-message-container hidden h-100 px-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                    <div class="py-3 bg-light sticky-top z-index-1 border-bottom text-center hidden" data-region="contact-request-sent-message-container">
+                        <p class="m-0">İletişim isteği gönderildi</p>
+                        <p class="font-italic font-weight-light" data-region="text"></p>
+                    </div>
+                    <div class="p-3 bg-light text-center hidden" data-region="self-conversation-message-container">
+                        <p class="m-0">Kişisel alan</p>
+                        <p class="font-italic font-weight-light" data-region="text">Daha sonra erişmek için taslak mesajları, bağlantıları, notları vb. Kaydedin.</p>
+                   </div>
+                    <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</div>
+                </div>
+                <div class="p-4 w-100 h-100 hidden position-absolute" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                    
+                    <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                        <h3 class="h6 hidden" data-region="dialogue-header"></h3>
+                        <p class="text-muted" data-region="dialogue-text"></p>
+                        <div class="mb-2 hidden" data-region="delete-messages-for-all-users-toggle-container">
+                            <label class="custom-control-label ml-2 text-muted">
+                                <input type="checkbox" data-region="delete-messages-for-all-users-toggle">
+                                Benim ve diğer herkes için sil
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                            <span data-region="dialogue-button-text">Blok</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                            <span data-region="dialogue-button-text">Unblock</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                            <span data-region="dialogue-button-text">Kaldır</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                            <span data-region="dialogue-button-text">Ekle</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                            <span data-region="dialogue-button-text">Sil</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                            <span data-region="dialogue-button-text">Sil</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                            <span data-region="dialogue-button-text">İletişim isteği gönder</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                            <span data-region="dialogue-button-text">Kabul et ve kişilere ekle</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                            <span data-region="dialogue-button-text">Kabul etme</span>
+                            <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">İptal</button>
+                    </div>
+                </div>
+                <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                    <div class="h-100 d-flex flex-column">
+                        <div
+                            class="px-2 pb-2 pt-0 bg-light h-100"
+                            style="overflow-y: auto"
+                        >
+                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                                <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="mr-2">
+                                            <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                        </div>
+                                        <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                        <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                    </div>
+                                    <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                    <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                </div>
+                            </div>                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+        
+        <div
+            class="hidden"
+            aria-hidden="true"
+            data-region="view-group-info"
+        >
+            <div
+                class="pt-3 h-100 d-flex flex-column"
+                data-region="group-info-content-container"
+                style="overflow-y: auto"
+            ></div>
+        </div>        <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="47533">
+            <div id="message-drawer-view-overview-container-6059f66b0a00f6059f66adb31f39" class="d-flex flex-column h-100" style="overflow-y: auto">
+                    
+                    
+                    <div
+                        class="section border-0 card"
+                        data-region="view-overview-favourites"
+                    >
+                        <div id="view-overview-favourites-toggle" class="card-header p-0" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-target="#view-overview-favourites-target-6059f66b0a00f6059f66adb31f39"
+                                aria-expanded="false"
+                                aria-controls="view-overview-favourites-target-6059f66b0a00f6059f66adb31f39"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="font-weight-bold">Yıldızlı</span>
+                                <small class="hidden ml-1" data-region="section-total-count-container"
+                                aria-label=" total conversations">
+                                    (<span data-region="section-total-count"></span>)
+                                </small>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                data-region="section-unread-count"
+                                >
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class="collapse border-bottom  lazy-load-list"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="47533"
+                                    id="view-overview-favourites-target-6059f66b0a00f6059f66adb31f39"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container-6059f66b0a00f6059f66adb31f39"
+
+                    >
+                        
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                                    <p class="text-muted mt-2">Yıldızlı görüşme yok</p>
+
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    
+                    <div
+                        class="section border-0 card"
+                        data-region="view-overview-group-messages"
+                    >
+                        <div id="view-overview-group-messages-toggle" class="card-header p-0" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-target="#view-overview-group-messages-target-6059f66b0a00f6059f66adb31f39"
+                                aria-expanded="false"
+                                aria-controls="view-overview-group-messages-target-6059f66b0a00f6059f66adb31f39"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="font-weight-bold">Grup</span>
+                                <small class="hidden ml-1" data-region="section-total-count-container"
+                                aria-label=" total conversations">
+                                    (<span data-region="section-total-count"></span>)
+                                </small>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                data-region="section-unread-count"
+                                >
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class="collapse border-bottom  lazy-load-list"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="47533"
+                                    id="view-overview-group-messages-target-6059f66b0a00f6059f66adb31f39"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6059f66b0a00f6059f66adb31f39"
+
+                    >
+                        
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                                    <p class="text-muted mt-2">Grup sohbeti yok</p>
+
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    
+                    <div
+                        class="section border-0 card"
+                        data-region="view-overview-messages"
+                    >
+                        <div id="view-overview-messages-toggle" class="card-header p-0" data-region="toggle">
+                            <button
+                                class="btn btn-link w-100 text-left p-2 d-flex align-items-center overview-section-toggle collapsed"
+                                data-toggle="collapse"
+                                data-target="#view-overview-messages-target-6059f66b0a00f6059f66adb31f39"
+                                aria-expanded="false"
+                                aria-controls="view-overview-messages-target-6059f66b0a00f6059f66adb31f39"
+                            >
+                                <span class="collapsed-icon-container">
+                                    <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="expanded-icon-container">
+                                    <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                                <span class="font-weight-bold">Özel</span>
+                                <small class="hidden ml-1" data-region="section-total-count-container"
+                                aria-label=" total conversations">
+                                    (<span data-region="section-total-count"></span>)
+                                </small>
+                                <span class="hidden ml-2" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                                </span>
+                                <span class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                data-region="section-unread-count"
+                                >
+                                    
+                                </span>
+                            </button>
+                        </div>
+                                            <div
+                        class="collapse border-bottom  lazy-load-list"
+                        aria-live="polite"
+                        data-region="lazy-load-list"
+                        data-user-id="47533"
+                                    id="view-overview-messages-target-6059f66b0a00f6059f66adb31f39"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-6059f66b0a00f6059f66adb31f39"
+
+                    >
+                        
+                        <div class="hidden text-center p-2" data-region="empty-message-container">
+                                    <p class="text-muted mt-2">Özel görüşme yok</p>
+
+                        </div>
+                        <div class="hidden list-group" data-region="content-container">
+                            
+                        </div>
+                        <div class="list-group" data-region="placeholder-container">
+                                    <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</div>
+
+                        </div>
+                        <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div
+            data-region="view-search"
+            aria-hidden="true"
+            class="h-100 hidden"
+            data-user-id="47533"
+            data-users-offset="0"
+            data-messages-offset="0"
+            style="overflow-y: auto"
+            
+        >
+            <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                
+                <div class="d-flex flex-column">
+                    <div class="mb-3 bg-white" data-region="all-contacts-container">
+                        <div data-region="contacts-container"  class="pt-2">
+                            <h4 class="h6 px-2">Kişiler</h4>
+                            <div class="list-group" data-region="list"></div>
+                        </div>
+                        <div data-region="non-contacts-container" class="pt-2 border-top">
+                            <h4 class="h6 px-2">İletişim kurulamadı</h4>
+                            <div class="list-group" data-region="list"></div>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn btn-link text-primary" data-action="load-more-users">
+                                <span data-region="button-text">Load more</span>
+                                <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white" data-region="messages-container">
+                        <h4 class="h6 px-2 pt-2">Mesajlar</h4>
+                        <div class="list-group" data-region="list"></div>
+                        <div class="text-right">
+                            <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                <span data-region="button-text">Load more</span>
+                                <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="hidden p-3 text-center" data-region="no-results-container">Sonuç yok</p>
+                </div>            </div>
+            <div class="hidden" data-region="loading-placeholder">
+                <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</div>
+            </div>
+            <div class="p-3 text-center" data-region="empty-message-container">
+                <p>İnsan ve mesajları ara</p>
+            </div>
+        </div>        
+        <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+            <div class="hidden" data-region="content-container">
+                
+                <div data-region="settings" class="p-3">
+                    <h3 class="h6 font-weight-bold">Privacy</h3>
+                    <p>You can restrict who can message you</p>
+                    <div data-preference="blocknoncontacts" class="mb-3">
+                            <div class="custom-control custom-radio mb-2">
+                                <input
+                                    type="radio"
+                                    name="message_blocknoncontacts"
+                                    class="custom-control-input"
+                                    id="block-noncontacts-6059f66b0a00f6059f66adb31f39-1"
+                                    value="1"
+                                >
+                                <label class="custom-control-label ml-2" for="block-noncontacts-6059f66b0a00f6059f66adb31f39-1">
+                                    Yalnızca kişilerim
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio mb-2">
+                                <input
+                                    type="radio"
+                                    name="message_blocknoncontacts"
+                                    class="custom-control-input"
+                                    id="block-noncontacts-6059f66b0a00f6059f66adb31f39-0"
+                                    value="0"
+                                >
+                                <label class="custom-control-label ml-2" for="block-noncontacts-6059f66b0a00f6059f66adb31f39-0">
+                                    Kişilerim ve derslerimdaki herkes
+                                </label>
+                            </div>
+                    </div>
+                
+                    <div class="hidden" data-region="notification-preference-container">
+                        <h3 class="mb-2 mt-4 h6 font-weight-bold">Bildirim tercihleri</h3>
+                    </div>
+                
+                    <h3 class="mb-2 mt-4 h6 font-weight-bold">Genel</h3>
+                    <div data-preference="entertosend">
+                        <span class="switch">
+                            <input type="checkbox"
+                                id="enter-to-send-6059f66b0a00f6059f66adb31f39"
+                                checked
+                            >
+                            <label for="enter-to-send-6059f66b0a00f6059f66adb31f39">
+                                Göndermek için enter tuşunu kullanın
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div data-region="placeholder-container">
+                
+                <div class="d-flex flex-column p-3">
+                    <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                    <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                    <div class="mb-3">
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-3">
+                            <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                    <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                    <div class="mb-4">
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                        </div>
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                    <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                    <div class="mb-3">
+                        <div class="w-100 d-flex mb-2 align-items-center">
+                            <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                            <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                        </div>
+                    </div>
+                </div>            </div>
+        </div>    </div>
+    <div class="footer-container position-relative" data-region="footer-container">
+        
+        <div
+            class="hidden border-top bg-white position-relative"
+            aria-hidden="true"
+            data-region="view-conversation"
+            data-enter-to-send="1"
+        >
+            <div class="hidden p-2" data-region="content-messages-footer-container">
+                
+                <div class="d-flex mt-1">
+                    <textarea
+                        dir="auto"
+                        data-region="send-message-txt"
+                        class="form-control bg-light"
+                        rows="3"
+                        data-auto-rows
+                        data-min-rows="3"
+                        data-max-rows="5"
+                        role="textbox"
+                        aria-label="Bir ileti yaz..."
+                        placeholder="Bir ileti yaz..."
+                        style="resize: none"
+                    ></textarea>
+                    <button
+                        class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto"
+                        aria-label="Mesaj gönder"
+                        data-action="send-message"
+                    >
+                        <span data-region="send-icon-container"><i class="icon fa fa-paper-plane fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden p-2" data-region="content-messages-footer-edit-mode-container">
+                
+                <div class="d-flex p-3 justify-content-end">
+                    <button
+                        class="btn btn-link btn-icon my-1 icon-size-4"
+                        data-action="delete-selected-messages"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Seçilen mesajları sil"
+                    >
+                        <span data-region="icon-container"><i class="icon fa fa-trash fa-fw " aria-hidden="true"  ></i></span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                        <span class="sr-only">Seçilen mesajları sil</span>
+                    </button>
+                </div>            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-require-contact-container">
+                
+                <div class="p-3 bg-white">
+                    <p data-region="title"></p>
+                    <p class="text-muted" data-region="text"></p>
+                    <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                        <span data-region="dialogue-button-text">İletişim isteği gönder</span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-require-unblock-container">
+                
+                <div class="p-3 bg-white">
+                    <p class="text-muted" data-region="text">Bu kullanıcıyı engellediniz.</p>
+                    <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                        <span data-region="dialogue-button-text">Kullanıcının engelini kaldır</span>
+                        <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Yükleniyor" aria-label="Yükleniyor"></i></span>
+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden bg-secondary p-3" data-region="content-messages-footer-unable-to-message">
+                
+                <div class="p-3 bg-white">
+                    <p class="text-muted" data-region="text">Bu kullanıcıya mesaj gönderemezsiniz</p>
+                </div>
+            </div>
+            <div class="p-2" data-region="placeholder-container">
+                <div class="d-flex">
+                    <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                    <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                </div>            </div>
+            <div
+                class="hidden position-absolute"
+                data-region="confirm-dialogue-container"
+                style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+            ></div>
+        </div>    </div>
+</div><footer id="footer" class="dark1">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="footer-content clearfix">
+					<p class="footer-text"><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener"><img alt="Creative Commons Lisansı" style="border-width:0;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />AYBUZEM ® ’deki ders materyalleri <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener"> Creative Commons </a> açık lisansları ile lisanslanmıştır.</p>
+                                        	<div class="footer-el">
+														                                <ul class="social-list"><li class="li-youtube-play"><a href="https://www.youtube.com/channel/UC-87ZX_tGH-f27EnABpQvAQ/playlists" target="_balnk" title="Youtube"><i class="fa fa-youtube-play"></i></a></li><li class="li-twitter"><a href="https://twitter.com/aybuzem" target="_balnk" title="Twitter"><i class="fa fa-twitter"></i></a></li><li class="li-facebook"><a href="https://www.facebook.com/aybu.aybuzem/" target="_balnk" title="Facebook"><i class="fa fa-facebook"></i></a></li><li class="li-linkedin"><a href="https://www.linkedin.com/school/ybuankara/" target="_balnk" title="Linkedin"><i class="fa fa-linkedin"></i></a></li><li class="li-instagram"><a href="https://www.instagram.com/ybuankara/" target="_balnk" title="Instagram"><i class="fa fa-instagram"></i></a></li></ul>                                                    </div>
+                                    </div>
+				                    <div class="footer-tools">
+                                                    <div class="logininfo"><a href="https://aybuzem.aybu.edu.tr/user/profile.php?id=47533" title="Profili görüntüle">YAĞIZ YAROĞLU</a> olarak giriş yaptınız (<a href="https://aybuzem.aybu.edu.tr/login/logout.php?sesskey=jU6kO7QP5L">Çıkış yap</a>)</div>                                                                                                                    </div>
+                     		</div>
+        </div>
+    </div>
+</footer>
+<div class="mb2notices"></div></div><!-- //end #page-b -->
+</div><!-- //end #page -->
+</div><!-- //end #page-outer -->
+<div class="fixed-bar">
+	<a class="fixed-panel-link" href="#" data-toggle="modal" data-target="#course-panel" title="Course dashboard"><span>Course dashboard</span></a>	<a href="#" class="theme-hide-sidebar mode1"" data-showtext="Show sidebars" data-hidetext="Hide sidebars">Hide sidebars</a></div>
+<div class="modal fade" id="course-panel" role="dialog" aria-labelledby="course-panel-label">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h4 class="modal-title" id="course-panel-label">Course dashboard: CENG311 - WEB TECNOLOGY APPLICATIONS</h4>
+      		</div>
+            <div class="course-panel-content">
+                        	<div class="student-panel-a">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5"><div class="box box-course"><h3>CENG311 - WEB TECNOLOGY APPLICATIONS</h3><div class="summary"></div></div></div>
+                            <div class="col-md-3"><div class="box box-activities"><h3><i class="fa fa-list-ul"></i>Etkinlikler</h3><ul class="boxlist"><li><a href="https://aybuzem.aybu.edu.tr/mod/forum/index.php?id=31895"><img src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/forum/1616150110/icon" alt="">Forumlar</a></li><li><a href="https://aybuzem.aybu.edu.tr/course/resources.php?id=31895"><img src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/resource/1616150110/icon" alt="">Kaynaklar</a></li><li><a href="https://aybuzem.aybu.edu.tr/mod/assign/index.php?id=31895"><img src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/assign/1616150110/icon" alt="">Ödevler</a></li></ul></div></div>
+                            <div class="col-md-4"><div class="box box-contacts"><h3><i class="fa fa-users"></i>Eğitimciler</h3></div></div>
+                        </div>
+                   	</div>
+            	</div>
+              	<div class="student-panel-b">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4"><div class="box box-grade"><a href="https://aybuzem.aybu.edu.tr/grade/report/user/index.php?id=31895"><div class="gradeicon"><i class="fa fa-table"></i></div><h3>Notlar</h3></a></div></div>
+                            <div class="col-md-4"><div class="box box-studentbadges"><a href="https://aybuzem.aybu.edu.tr/badges/view.php?type=2&amp;id=31895"><div class="gradeicon"><i class="fa fa-trophy"></i></div><h3>Rozetler</h3></a></div></div>
+                            <div class="col-md-4"><div class="box box-competencies"><a href="https://aybuzem.aybu.edu.tr/admin/tool/lp/coursecompetencies.php?courseid=31895"><div class="gradeicon"><i class="fa fa-road"></i></div><h3>Yetkinlikler</h3></a></div></div>
+                        </div>
+                	</div>
+            	</div>
+                <div class="box box-progress"><div class="progress"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="9.0909090909091" aria-valuemin="0" aria-valuemax="100" style="width:9%">9% </div></div></div>                        </div>
+		</div>
+	</div>
+</div>
+	<div id="theme-bookmarks-modal" class="modal fade" role="dialog"><div class="modal-dialog modal-sm" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">My bookmarks</h4></div><div class="modal-body"><form method="get" id="theme-bookmarks-form" action="" data-rooturl="https://aybuzem.aybu.edu.tr" data-pageurl="/mod/resource/view.php?id=182613" data-bookmarkthispage="Yer imlerine ekle" data-unbookmarkthispage="Bu sayfayı yer imlerinden kaldır" data-pagetitle="CENG311 - WEB TECNOLOGY APPLICATIONS:  Activity2.html" data-wentwrong="Something went wrong"><div class="form-group  mb2-pb-form-group"><label for="mb2bktitle">Başlık</label><input type="text" id="mb2bktitle" class="form-control" name="mb2bktitle" style="margin:0;width:100%;" value=""></div><div class="form-group  mb2-pb-form-group"><label for="mb2bkurl">URL</label><input type="text" id="mb2bkurl" class="form-control" name="mb2bkurl" value="" style="margin:0;width:100%;" readonly></div><input type="hidden" id="mb2bkcreateurl" name="mb2bkcreateurl" value="https://aybuzem.aybu.edu.tr/theme/mb2cg/lib/lib_ajax_bookmarks_manage.php"><input type="hidden" id="bkdelete" name="bkdelete" value=""><input type="hidden" id="bkupdate" name="bkupdate" value=""><input type="hidden" id="bklimit" name="bklimit" value="15"><input type="hidden" id="sesskey" name="sesskey" value="jU6kO7QP5L"><input style="display:none;" class="btn btn-default" type="submit" name="submit" value="Kaydet"><div class="loading-bg"><img src="https://aybuzem.aybu.edu.tr/theme/image.php/mb2cg/theme/1616150110/spinners/spinner-default" alt="" /></div></form></div><div class="modal-footer"><button type="button" class="btn btn-sm btn-success theme-bookmarks-save">Kaydet</button><button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Kapat</button></div></div></div></div><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://aybuzem.aybu.edu.tr/lib/requirejs.php/1616150110/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://aybuzem.aybu.edu.tr/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("tr",{
+ "Play": "Oynat",
+ "Pause": "Duraklat",
+ "Replay": "Yeniden Oynat",
+ "Current Time": "Süre",
+ "Duration Time": "Toplam Süre",
+ "Remaining Time": "Kalan Süre",
+ "Stream Type": "Yayın Tipi",
+ "LIVE": "CANLI",
+ "Loaded": "Yüklendi",
+ "Progress": "Yükleniyor",
+ "Fullscreen": "Tam Ekran",
+ "Non-Fullscreen": "Küçük Ekran",
+ "Mute": "Ses Kapa",
+ "Unmute": "Ses Aç",
+ "Playback Rate": "Oynatma Hızı",
+ "Subtitles": "Altyazı",
+ "subtitles off": "Altyazı Kapalı",
+ "Captions": "Altyazı",
+ "captions off": "Altyazı Kapalı",
+ "Chapters": "Bölümler",
+ "Close Modal Dialog": "Dialogu Kapat",
+ "Descriptions": "Açıklamalar",
+ "descriptions off": "Açıklamalar kapalı",
+ "Audio Track": "Ses Dosyası",
+ "You aborted the media playback": "Video oynatmayı iptal ettiniz",
+ "A network error caused the media download to fail part-way.": "Video indirilirken bağlantı sorunu oluştu.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Video oynatılamadı, ağ ya da sunucu hatası veya belirtilen format desteklenmiyor.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Tarayıcınız desteklemediği için videoda hata oluştu.",
+ "No compatible source was found for this media.": "Video için kaynak bulunamadı.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "Video, şifrelenmiş bir kaynaktan geliyor ve oynatmak için gerekli anahtar bulunamadı.",
+ "Play Video": "Videoyu Oynat",
+ "Close": "Kapat",
+ "Modal Window": "Modal Penceresi",
+ "This is a modal window": "Bu bir modal penceresidir",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Bu modal ESC tuşuna basarak ya da kapata tıklanarak kapatılabilir.",
+ ", opens captions settings dialog": ", altyazı ayarları menüsünü açar",
+ ", opens subtitles settings dialog": ", altyazı ayarları menüsünü açar",
+ ", opens descriptions settings dialog": ", açıklama ayarları menüsünü açar",
+ ", selected": ", seçildi",
+ "captions settings": "altyazı ayarları",
+ "subtitles settings": "altyazı ayarları",
+ "descriptions settings": "açıklama ayarları",
+ "Text": "Yazı",
+ "White": "Beyaz",
+ "Black": "Siyah",
+ "Red": "Kırmızı",
+ "Green": "Yeşil",
+ "Blue": "Mavi",
+ "Yellow": "Sarı",
+ "Magenta": "Macenta",
+ "Cyan": "Açık Mavi (Camgöbeği)",
+ "Background": "Arka plan",
+ "Window": "Pencere",
+ "Transparent": "Saydam",
+ "Semi-Transparent": "Yarı-Saydam",
+ "Opaque": "Mat",
+ "Font Size": "Yazı Boyutu",
+ "Text Edge Style": "Yazı Kenarlıkları",
+ "None": "Hiçbiri",
+ "Raised": "Kabartılmış",
+ "Depressed": "Yassı",
+ "Uniform": "Düz",
+ "Dropshadow": "Gölgeli",
+ "Font Family": "Yazı Tipi",
+ "Proportional Sans-Serif": "Orantılı Sans-Serif",
+ "Monospace Sans-Serif": "Eşaralıklı Sans-Serif",
+ "Proportional Serif": "Orantılı Serif",
+ "Monospace Serif": "Eşaralıklı Serif",
+ "Casual": "Gündelik",
+ "Script": "El Yazısı",
+ "Small Caps": "Küçük Boyutlu Büyük Harfli",
+ "Done": "Tamam",
+ "Caption Settings Dialog": "Altyazı Ayarları Menüsü",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Diyalog penceresinin başlangıcı. ESC tuşu işlemi iptal edip pencereyi kapatacaktır."
+});
+
+    });
+});;
+require(["block_navigation/navblock"], function(amd) { amd.init("20"); });;
+require(["block_settings/settingsblock"], function(amd) { amd.init("21", null); });;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-6059f66b04be06059f66adb31f36');
+    Popover.init(toggle);
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f6059f66adb31f38').submit();
+            });
+        });
+    ;
+
+require(
+[
+    'jquery',
+    'core_message/message_drawer',
+    'core_message/message_popover'
+],
+    function($, MessageDrawer, Popover)
+{
+
+    var root = $('#message-drawer-6059f66b0a00f6059f66adb31f39');
+    MessageDrawer.init(root);
+
+    var toggle = $('#message-drawer-close-6059f66b0a00f6059f66adb31f39');
+    Popover.init(toggle);
+
+});
+;
+require(["core/notification"], function(amd) { amd.init(565365, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/superfish/superfish.custom.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/lightslider/lightslider.custom.min.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/OwlCarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/inview.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/animateNumber.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/js.cookie.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/javascript/theme-amd.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/javascript/theme.js"></script>
+<script type="text/javascript" src="https://aybuzem.aybu.edu.tr/lib/javascript.php/1616150110/theme/mb2cg/assets/youtube/player_api.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"En son de\u011fi\u015ftirme","name":"Ad\u0131","error":"Hata","info":"Bilgi","yes":"Evet","no":"Hay\u0131r","viewallcourses":"T\u00fcm dersleri g\u00f6r\u00fcnt\u00fcle","cancel":"\u0130ptal","morehelp":"Daha fazla yard\u0131m","loadinghelp":"Y\u00fckleniyor...","confirm":"Onayla","areyousure":"Emin misiniz?","closebuttontitle":"Kapat","unknownerror":"Bilinmeyen hata"},"repository":{"type":"T\u00fcr","size":"Boyut","invalidjson":"Ge\u00e7ersiz JSON ifadesi","nofilesattached":"Dosya ili\u015fkilendirilmedi","filepicker":"Dosya se\u00e7ici","logout":"\u00c7\u0131k\u0131\u015f","nofilesavailable":"Uygun dosya yok","norepositoriesavailable":"Maalesef, mevcut depolar\u0131n\u0131zdan hi\u00e7biri bu bi\u00e7imde dosya d\u00f6nd\u00fcremez.","fileexistsdialogheader":"Bu dosya var","fileexistsdialog_editor":"Bu ada sahip bir dosya, d\u00fczenlemekte oldu\u011funuz metne zaten eklenmi\u015ftir.","fileexistsdialog_filemanager":"Bu isimle zaten bir dosya var","renameto":"\u015e\u00f6yle yeniden adland\u0131r \"{$a}\"","referencesexist":"Bu dosyay\u0131 kaynak olarak kullanan {$a} tane takma ad\/k\u0131sayol dosyalar\u0131 var","select":"Se\u00e7"},"admin":{"confirmdeletecomments":"Yorumlar\u0131 silmek \u00fczeresiniz, bunu yapmak istedi\u011finize emin misin?","confirmation":"Onaylama"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() { M.util.js_pending('random6059f66adb31f1'); Y.on('domready', function() { M.util.init_maximised_embed(Y, "resourceobject");  M.util.js_complete('random6059f66adb31f1'); });
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"tr"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random6059f66adb31f40'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6059f66adb31f40'); });
+})();
+//]]>
+</script>
+</body>
+</html>
