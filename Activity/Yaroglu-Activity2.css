@@ -31,6 +31,9 @@ th, td
 {
 	text-align: right;	
 }
+.top{
+	vertical-align: top;
+}
 tbody tr:nth-child(even) td 
 {
 	background-color: yellow;
