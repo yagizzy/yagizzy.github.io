@@ -31,6 +31,9 @@ th, td
 {
 	text-align: right;	
 }
+.colspan{
+	background-color: yellow;
+}
 
 tbody tr:nth-child(even) td 
 {
