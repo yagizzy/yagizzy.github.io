@@ -32,10 +32,10 @@ body {
 }
 
 
-#footer {
-	
-	font-size: small;
-
+footer {
+   font-size:small;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 h2,h1{
