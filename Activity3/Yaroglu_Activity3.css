@@ -6,6 +6,7 @@ CSS styles for Ultimate frisbee page
 body {
   color: black;
   font: 12pt "Tahoma", "Arial", sans-serif;
+  background-color: coral;
 }
 
 #wrapper{
