@@ -6,8 +6,8 @@ CSS styles for Ultimate frisbee page
 body {
   color: black;
   font: 12pt "Tahoma", "Arial", sans-serif;
- background: rgb(255,255,255);
-background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(2,170,86,1) 50%, rgba(0,64,26,0.9444152661064426) 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(2,170,86,1) 50%, rgba(0,64,26,0.9444152661064426) 100%);
 }
 
 #wrapper{
@@ -33,6 +33,8 @@ background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(2,170,86,1) 50%,
 
 
 #footer {
+	margin-left:auto;
+	margin-right:auto;
 
 }
 
