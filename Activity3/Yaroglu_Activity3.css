@@ -6,31 +6,19 @@ CSS styles for Ultimate frisbee page
 body {
   color: white;
   font: 12pt "Lucida Console", "Courier New",sans-serif;
-  background: rgb(255,255,255);
-  background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(2,170,86,1) 50%, rgba(0,64,26,0.9444152661064426) 100%);
-}
-
-#wrapper{
+  background-color: blue; 
 
 }
-
-#header {
-
+li{
+	list-style-type: square;
 }
 
-#news {
-
+header{
+	text-align: center;
 }
 
-
-#main {
-
-}
 img{
 	border: 2px solid black;
-}
-#main img{
-
 }
 th, td 
 {
@@ -44,12 +32,14 @@ th{
 	text-align:center;
 }
 
-
-
 footer {
    font-size:small;
    text-align: center;
 }
+h1.a{
+	text-align:center;
+}
+
 h2,h1{
 background-color: red;
 }
