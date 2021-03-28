@@ -4,8 +4,8 @@ CSS styles for Ultimate frisbee page
 */
 
 body {
-  color: black;
-  font: 12pt "Tahoma", "Arial", sans-serif;
+  color: white;
+  font: 12pt "Lucida Console", "Courier New",sans-serif;
   background: rgb(255,255,255);
   background: linear-gradient(22deg, rgba(255,255,255,1) 0%, rgba(2,170,86,1) 50%, rgba(0,64,26,0.9444152661064426) 100%);
 }
@@ -26,10 +26,24 @@ body {
 #main {
 
 }
-
+img{
+	border: 2px solid black;
+}
 #main img{
 
 }
+th, td 
+{
+	border: 1px solid black;
+	padding: .2em .1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+th{
+	background-color: red;
+	text-align:center;
+}
+
 
 
 footer {
@@ -39,3 +53,9 @@ footer {
 h2,h1{
 background-color: red;
 }
+.altrow:nth-child(odd) {
+	background-color: orange;
+;}
+.altrow:nth-child(even) {
+	background-color: yellow
+;}
