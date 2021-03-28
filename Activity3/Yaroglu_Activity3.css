@@ -4,8 +4,8 @@ CSS styles for Ultimate frisbee page
 */
 
 body {
-  color: white;
-  font: 12pt "Lucida Console", "Courier New",sans-serif;
+  color: #b30000;
+  font: 18px bold ,"Lucida Console" , "Courier New",sans-serif;
   background-repeat: no-repeat;
   background-image:url("kahvee.jpg");
   background-size: cover;
@@ -29,8 +29,9 @@ th, td
 	vertical-align: middle;
 }
 th{
-	background-color: red;
+	background-color: #ecd9c6;
 	text-align:center;
+	color:#604020;
 }
 
 footer {
@@ -39,14 +40,28 @@ footer {
 }
 h1.a{
 	text-align:center;
+	font-weight: bold;
+	font-style: italic;
+	color:#4c341a
 }
-
+h2.a{
+	font-style: oblique;
+	font-size: 30px;
+	color:#4c341a
+}
+h2.b{
+	font: italic bold 28px Georgia, serif;
+	color:#4c341a;
+}
+h2.c{
+	color:#4c341a;
+}
 h2,h1{
-background-color: red;
+background-color: #f2e6d9;
 }
 .altrow:nth-child(odd) {
-	background-color: orange;
+	background-color: #734d26;
 ;}
 .altrow:nth-child(even) {
-	background-color: yellow
-;}
+	background-color: #bf8040;
+	}
