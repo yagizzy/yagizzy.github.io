@@ -12,8 +12,8 @@
 	font-weight:bold;
 }
 .image img{
-	width:250px;
 	float:left;
+	width:250px;
 	margin-right:10px;
 }
 .content{
