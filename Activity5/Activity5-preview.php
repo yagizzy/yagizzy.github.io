@@ -8,5 +8,6 @@
 	{
 		echo $_POST['name'];
 	}
+	?>
 </body>
 </html>
