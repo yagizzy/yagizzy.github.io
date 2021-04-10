@@ -8,6 +8,10 @@
 	{
 		echo $_POST['name'];
 	}
+	else
+	{
+	 echo "w";	
+	}
 	?>
 </body>
 </html>
