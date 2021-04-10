@@ -3,7 +3,12 @@
 <head>
 </head>
 <body> 
- 
+<?php
+	if(empty($_POST['name'])==false)
+	{
+	echo .$_POST['name'];
+	}
+	?>
 <h2>Registration Form</h2>
 <form  action="Activity5-preview.php" method="post">  
   Name: <input type="text" name="name"/><br/>
