@@ -4,9 +4,9 @@
 </head>
 <body> 
 <?php
-	if(empty($_POST['name'])==false)
+	if(empty($_GET['name'])==false)
 	{
-		echo $_POST['name'];
+		echo $_GET['name'];
 	}
 	else
 	{
