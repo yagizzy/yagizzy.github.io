@@ -4,13 +4,13 @@
 </head>
 <body> 
 <?php
-	if(empty($_POST['name'])==false)
+	if(empty($_GET['name'])==false)
 	{
-	echo $_POST['name'];
+	echo $_GET['name'];
 	}
 	?>
 <h2>Registration Form</h2>
-<form  action="Activity5-preview.php" method="post">  
+<form  action="Activity5-preview.php" method="get">  
   Name: <input type="text" name="name"/><br/>
   <input type="submit" value="Submit">  
 </form>
