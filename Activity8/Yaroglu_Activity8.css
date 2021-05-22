@@ -1,0 +1,13 @@
+#movingbutton{
+    display: block;
+    position: absolute;
+	background-color: #008CBA;
+	padding: 15px 32px;
+}
+body{
+  width : 100%;
+}
+.ctr{
+  width : 100%;
+height : 100%;
+}
