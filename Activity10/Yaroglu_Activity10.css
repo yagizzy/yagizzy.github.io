@@ -1,0 +1,17 @@
+   .input {
+    background:white;
+	margin-top:5px;
+	margin-bottom:6px;
+   }
+   .button {
+   border-radius: 4px;
+   }
+   label {
+    display: block;
+    width: 200px;
+    float: left;
+    margin:5px;
+   }
+   br {
+    clear: left;
+   }
