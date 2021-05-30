@@ -8,22 +8,22 @@ $(document).ready(function() {
 	// set up event handlers for links    
 	$("#image_list a").click(function(evt) {
 
-		var imageURL = $(this).attr("href");
-		$("#image").attr("src", imageURL);
+		var img = $(this).attr("href");
+		$("#image").attr("src", img);
 				
-		var caption = $(this).attr("title");
-		$("#caption").text(caption);
+		var title = $(this).attr("title");
+		$("#title").text(title);
 
 		// cancel the default action of the link
 	    evt.preventDefault();
-		var imageURL = $(this).attr("href");
-		var caption = $(this).attr("title");
+		var img = $(this).attr("href");
+		var title = $(this).attr("title");
 		
-		$("#caption").fadeOut(1000,function(){
-			$("#caption").text(caption).fadeIn(1000);
+		$("#title").fadeOut(1000,function(){
+			$("#title").text(title).fadeIn(1000);
 		});
 	$("#image").fadeOut(1000,function(){
-		$("#image").attr("src",imageURL).fadeIn(1000);
+		$("#image").attr("src",img).fadeIn(1000);
 	});
 	}); // end click
 	
@@ -31,5 +31,5 @@ $(document).ready(function() {
 	
 	$("li:first-child a").focus();
 	$("#image").hide().fadeIn(1000);
-	$("#caption").hide().fadeIn(1000);
+	$("#title").hide().fadeIn(1000);
 }); // end ready
