@@ -1,17 +1,4 @@
 (function ($) {
-    /*
-    * @param (array) contents of text elments or nodes
-    * @param (integer) keep denotes the number characters to keep when transitionong out
-    * @param (integer) seconds it takes to iterate through slide
-    * @param (integer) delay number of milliseconds delay between hiding and showing each character default = 20
-    * @param (integer) iterations for the text ticker to cycle through all elements. 0 denotes infinite,
-    * @param (float) ratio used for setting both when transition in and out starts
-    * @param (integer) secondsout so we can set the the speed of the second part if using keep
-    * @param (boolean) dev mode boolean (false by default)
-    * @param (string) pausetarget element to target for trigger e.g. input button
-    * @param (string) stoptarget element to target for trigger e.g. input button
-    * @return null
-    */
     $.fn.tickerText = function (contents, keep, seconds, delay = 20, iterations = 0, ratio, secondsout, dev = false, pausetarget, stoptarget) {
         let current = 0, //state
         count = 0, //state
@@ -39,33 +26,15 @@
         masterTimelineTimerAddTidy,
         masterTimelineTimerSubtract,
         masterTimelineTimerSubtractTidy;
-
-        if (pausetarget) {
-            $("#" + pausetarget).on("click", function (e) {
-                e.preventDefault();
-                console.log("pause:", !pause);
-                pause = !pause;
-            });
-        }
-
-        if (stoptarget) {
-            $("#" + stoptarget).on("click", function (e) {
-                e.preventDefault();
-                console.log("stop:", exit);
-                exit = !exit;
-            });
-        }
-
         let maxInDelay = Math.floor(((seconds * inTransPercent) * 1000) / (contents[count % contents.length].textContent.length));
         let textArray = contents[count % contents.length].textContent.split("");
 
-        // needs to be able to start everythng again immediately
+        
         function reset() {
             clearTimeout(masterTimelineTimerAdd);
             clearTimeout(masterTimelineTimerAddTidy);
             clearTimeout(masterTimelineTimerSubtract);
-            clearTimeout(masterTimelineTimerSubtractTidy);
-            //
+            clearTimeout(masterTimelineTimerSubtractTidy)
             clearTimeout(timelineTimerAdd);
             clearTimeout(timelineTimerSubract);
         }
@@ -79,7 +48,7 @@
                 if (!exit && (pause || !vis())) {
                     if (dev) {
                         dto = performance.now();
-                        console.log("timeline add Noop timelineNoop for iterations dxx - dyy, count final", count, dtn - dto, "microseconds");
+                      
                     }
                     timeoutAddNoop();
                 } if (exit) {
@@ -99,7 +68,7 @@
                 if (!exit && !pause && vis()) {
                     if (dev) {
                         dto = performance.now();
-                        console.log("timeline subtract Noop end  dxx - dyy, count final", count, dtn - dto, "microseconds");
+                      
                     }
                     clearTimeout(timelineTimerSubtractNoop);
                     return;
@@ -107,7 +76,7 @@
                 if (!exit) {
                     if (dev) {
                         dto = performance.now();
-                        console.log("timeline subtract Noop  dxx - dyy, count final", count, dtn - dto, "microseconds");
+                        
                     }
                     timeoutSubtractNoop();
                 } if (exit) {
@@ -118,14 +87,10 @@
             }, maxOutDelay);
         }
 
-        // add function
+     
         function timeoutAdd() {
             timelineTimerAdd = setTimeout(function () {
-                // first check if visible
-                // if (pause || !vis()) {
-                //     timeoutAddNoop();
-                // }
-
+  
                 let text = elem.text();
                 if (!keep && current < textArray.length ) {
                     elem.text(text + textArray[current]);
@@ -164,16 +129,10 @@
 
         let maxOutDelay = Math.floor(1000 * (seconds * outTransPercent) / elem.text().length);
 
-        // subtract function
         function timeoutSubtract() {
             timelineTimerSubract = setTimeout(function () {
 
-        // first check if visible
-                // if (pause || !vis()) {
-                //     timeoutSubtractNoop();
-                // }
 
-                //do stuff
                 let tempText;
                 if (elem.text().length > keep) {
                     tempText = elem.text().substring(0, elem.text().length - 1);
@@ -194,7 +153,7 @@
                         dsDiff = 0;
                     }
                     if (dev) {
-                        console.log("completed pt3 ", ds - dx, "microseconds", "text", elem.text());
+                        
                     }
                     clearTimeout(timelineTimerSubract);
                     part4();
@@ -209,7 +168,7 @@
             }, (delay <= maxOutDelay ? delay : maxOutDelay));
         }
 
-        // noop
+  
         function timelineNoop() {
 
             if (dev) {
@@ -218,23 +177,21 @@
             timelineTimerNoop = setTimeout(function () {
 
                 if (!exit && !pause && vis()) {
-                    // if (dev) {
-                    //     dx = performance.now();
-                    // }
+                   
                     if (dev) {
                         dyy = performance.now();
-                        console.log("timeline Noop end for iterations dxx - dyy, count final", count, dyy - dxx, "microseconds");
+                       
                     }
-                    // timeline();
+                   
                     clearTimeout(timelineTimerNoop);
-                    //restart
+                    
                     timeline();
                     return;
                 }
                 if (!exit && (pause || !vis())) {
                     if (dev) {
                         dyy = performance.now();
-                        console.log("timeline Noop for iterations dxx - dyy, count final", count, dyy - dxx, "microseconds");
+                        
                     }
                     timelineNoop();
                 } if (exit) {
@@ -275,10 +232,10 @@
 
                 part3();
 
-                // end cycle if iterations starting is equal to items * iterations
+               
                 if (iterations && count >= contents.length * iterations) {
                     exit = true;
-                    // denotes new iteration
+    
                     clearTimeout(masterTimelineTimerAddTidy);
                     return;
 
@@ -305,33 +262,33 @@
             masterTimelineTimerSubtractTidy = setTimeout(function () {
 
                 let text = elem.text();
-                // clean up if not using keep
+                
                 if (!keep && text && !exit && (vis() && !pause)) {
                     elem.text("");
                 }
-                // clean if we are using keep
+                
                 if (keep && text != contents[count % contents.length].textContent.substr(0, keep) && !exit && (vis() && !pause)) {
                     elem.text(contents[count % contents.length].textContent.substr(0, keep));
                 }
 
-                // set speed of next iteration if using 2nd speed parameter
+                
                 if (secondsout && count === 0) {
                     seconds = secondsout;
-                    // update maxInDelay
+                    
                     maxInDelay = Math.floor(((seconds * inTransPercent) * 1000) / (contents[count % contents.length].textContent.length));
-                    // update maxutDelay
+                    
                     maxOutDelay = Math.floor(1000 * (seconds * outTransPercent) / text.length);
                 }
 
-                // count incremented to denote a cycle
+               
                 if (!exit && (!pause || vis())) {
-                    // lets make sure we increase the count to make sure we select the right text
+                    
                     count++;
 
-                    // update text array after count increment
+                   
                     textArray = contents[count % contents.length].textContent.split("");
 
-                    // denotes new iteration
+                    
                     if (dev) {
                         dy = performance.now();
                         console.log("completed pt4", dy - dx, "microseconds", "text", elem.text());
@@ -354,8 +311,7 @@
 
         function timeline() {
 
-            // initially set to 0 then repeats depending on value of initialTime
-            // initial time set to seconds (which also depends on the value of secondOut) after first iteration
+         
             dx = performance.now();
 
             if (dev) {
@@ -363,20 +319,18 @@
                 console.log("count", count);
             }
 
-            // add immediately - pt1
+            
             part1();
 
         }
 
-        //initial
+       
         timeline();
     };
 
 })(jQuery);
 
-/////////////////////////////////////////
-// main visibility API function
-// check if current tab is active or not
+
 var vis = (function () {
     var stateKey,
         eventKey,
