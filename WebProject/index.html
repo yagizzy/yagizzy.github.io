@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -23,10 +24,13 @@
             <li><a href="sign_in_up.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign In/Up</a></li>
         </ul>
     </nav>
-   <div class="mid">
-    <h1 style="text-align:center ;margin-top: 100px; font-size:50px">This is Home Page </h1>
-    </div>
-
+   <div id="holder" class="text tt-holder" style="margin-top:100px ; text-align:center" >
+  <p class="tt">I ❤️LOVE THEATER!</p>
+  <p class="tt">I ❤️LOVE FRİENDS!</p>
+  <p class="tt">I ❤️LOVE THEATRE LOVER!</p>
+  <p class="tt">I ❤️LOVE EVENTS!</p>
+  <h2 class="ttt"></h2>
+</div>
     <footer>
         <div class="row">
             <div class="col" style="text-align: center">
@@ -35,7 +39,18 @@
             </div>
         </div>
     </footer>
+	<script>
+  $(document).ready(function () {
 
+    let $elements = $(".tt-holder .tt");
+
+    let animatetext = function () {
+        $(".ttt").tickerText($elements, 8, 3, 30, 1, 0.5, 2, false, "timerpause", "timerstop");
+    };
+    $(animatetext);
+});
+</script>
+<script src="index.js"></script>
 </body>
 
 
