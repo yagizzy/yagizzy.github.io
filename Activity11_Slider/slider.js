@@ -12,4 +12,4 @@ $(document).ready(function() {
 			  pager:true,
 			  pagerType: 'short'
 			});
-    	});
+    	})(jQuery);
