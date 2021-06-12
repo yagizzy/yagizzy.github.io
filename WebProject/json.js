@@ -4,7 +4,7 @@ $(document).ready(function(){
             $.each(this, function(key, value) {
                 $("#directors").append(
                     "Title: " + value.title + "<br>" + 
-                   "Name: " + value.name + "<br>" 
+                   "Name: " + value.name
                 );
             });
         }); 
