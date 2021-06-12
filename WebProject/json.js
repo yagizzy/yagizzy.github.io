@@ -3,7 +3,7 @@ $(document).ready(function(){
         $.each(data, function() {
             $.each(this, function(key, value) {
                 $("#directors").append(
-                    "<b>""Title: ""</b>" + value.title + "<br>" + 
+                    "Title: " + value.title + "<br>" + 
                    "Name: " + value.name + "<br>" 
                 );
             });
