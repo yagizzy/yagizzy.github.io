@@ -27,4 +27,4 @@
             error(){
                 console.log("error");
             }
-        })
+        });
